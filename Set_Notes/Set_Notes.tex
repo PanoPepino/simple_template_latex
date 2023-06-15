@@ -1,0 +1,55 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{import}
+\usepackage{xcolor}
+\usepackage[margin=2cm]{geometry}
+\usepackage{latexsym}
+\usepackage{mathtools}
+\usepackage[linktocpage=true]{hyperref}
+\usepackage{soul}%to highlight stuff. Invoke \hl
+\usepackage{float} % To impose the position of the figure at desired place.
+\usepackage{amsmath, amsfonts, amsthm} % Math packages
+\usepackage{hyperref} % To hiperlink things on the internet.
+\usepackage{cite} % To cite stuff
+\usepackage{listings} % Code listings, with syntax highlighting
+\usepackage[english]{babel} % English language hyphenation
+\usepackage{graphicx} % Required for inserting images
+\usepackage{sectsty} % Allows customising section commands
+\usepackage{booktabs} % Required for better horizontal rules in tables
+\usepackage{enumitem} % Required for list customisation
+\usepackage{geometry} % Required for adjusting page dimensions and margins
+\usepackage{comment} % To remove big parts of text.
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Use 8-bit encoding
+\usepackage{fourier} % Use the Adobe Utopia font for the document
+\usepackage[nottoc]{tocbibind}
+\usepackage{cancel} % To cross and cancel values
+\usepackage{bigints} % In case you need bigger integrants
+\usepackage[skip=10pt plus1pt, indent=0pt]{parskip}
+\newcommand{\ket}[1]{\vert #1 \rangle}
+\newcommand{\bra}[1]{\langle #1 \vert}
+
+\begin{document}
+
+\author{\hyperlink{youremail@gmail.com}{Your Name}} %Change your name and email
+\title{Whatever} %Change the label of your course if needeed
+\date{dd/mm/yy} %Change the term accordingly
+\maketitle % Does this need a description?
+\setcounter{tocdepth}{2} % If you have subsections, the 2 accounts for them. 1 only for sections. 0 for nothing, so nothing will pop up in the table of contents.
+\tableofcontents
+\newpage
+
+\section*{Some intro}
+
+Something
+
+\textbf{Add-on:} While text will be just written in regular font, \textit{\textcolor{blue}{Personal thoughts will be written in Italic and blue.}}
+
+
+
+\newpage
+
+
+\import{sections}{M1}
+\import{sections}{M2}
+
+\end{document}
